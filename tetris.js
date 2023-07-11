@@ -1,6 +1,6 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("./worker.js")
+    .register("/Tetris-PWA/worker.js")
     .then((reg) => console.log("service worker alredy instaled", reg))
     .catch((err) => console.error("error in register service worker", err));
 }
