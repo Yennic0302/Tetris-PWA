@@ -5,7 +5,8 @@
   "background_color": "#333",
   "theme_color": "#111",
   "display": "standalone",
-  "start_url": "./utm_source=web_app_manifest",
+  "id": "/Tetris-PWA/",
+  "start_url": "/Tetris-PWA/",
   "scope": "./",
   "lang": "en-EN",
   "icons": [
