@@ -60,7 +60,11 @@ const cols = 10;
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let score = 0;
-let record = localStorage.getItem("record") || 0;
+let record = localStorage.getItem("record");
+if (record === null) {
+  record = 0;
+  localStorage.setItem("record", 0);
+}
 let gameUpdate;
 let pauseGame = false;
 
@@ -146,6 +150,15 @@ document.addEventListener("keydown", (e) => {
       reset.style.display = "block";
       pauseGame = true;
     }
+  }
+});
+
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden) {
+    clearInterval(gameUpdate);
+    pause.style.display = "none";
+    reset.style.display = "block";
+    pauseGame = true;
   }
 });
 

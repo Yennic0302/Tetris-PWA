@@ -1,4 +1,4 @@
-const cacheName = "v1_tetris";
+const cacheName = "v1.0.1_tetris";
 const urlsToCache = [
   "./index.html",
   "./tetris.js",

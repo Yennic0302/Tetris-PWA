@@ -21,6 +21,7 @@ body {
   color: #fff;
   font-size: 2rem;
   cursor: pointer;
+  padding: 0.3rem;
 }
 .main-screen {
   display: flex;
@@ -70,6 +71,7 @@ body {
 
 .btn-nav {
   user-select: none;
+  padding: 0.3rem;
 }
 
 .material-symbols-outlined {
@@ -121,6 +123,16 @@ body {
   border-radius: 3%;
   border: none;
   color: #fff;
+}
+
+.btn-nav:active {
+  background-color: #546aca88;
+  border-radius: 50%;
+}
+
+.btn-update-game:active {
+  background-color: #546aca88;
+  border-radius: 50%;
 }
 
 @media (min-width: 500px) {
