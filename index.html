@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#333" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Tetris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="main-screen">
+      <h3>TETRIS</h3>
+      <button id="play-game">play</button>
+    </div>
+    <div class="game-screen">
+      <div class="game-details">
+        <h2 class="score"></h2>
+        <h2 class="score record"></h2>
+        <button class="pause btn-update-game">
+          <span class="material-symbols-outlined"> pause </span>
+        </button>
+        <button class="reset-game btn-update-game">
+          <span class="material-symbols-outlined"> play_arrow </span>
+        </button>
+      </div>
+      <canvas id="canvas"></canvas>
+      <ul class="nav-game">
+        <li class="btnMobileLeft">
+          <span class="material-symbols-outlined btn-nav"> arrow_back </span>
+        </li>
+        <li class="btnMobileDown">
+          <span class="material-symbols-outlined btn-nav">
+            arrow_downward_alt
+          </span>
+        </li>
+        <li class="btnMobileRigth">
+          <span class="material-symbols-outlined btn-nav"> arrow_forward </span>
+        </li>
+        <li class="btnMobileRotate">
+          <span class="material-symbols-outlined btn-nav"> sync </span>
+        </li>
+      </ul>
+    </div>
+    <div class="game-over-screen">
+      <div class="game-over-continer">
+        <h2>Game Over</h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <script src="tetris.js"></script>
+  </body>
+</html>

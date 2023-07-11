@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: #111;
+  height: 100vh;
+  flex-direction: column;
+  color: #fff;
+}
+
+.reset-game {
+  display: none;
+}
+.btn-update-game {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 5rem;
+  height: 100vh;
+}
+
+.main-screen button {
+  outline: none;
+  background: linear-gradient(to left, #b422c588, #546aca88);
+  font-size: 4rem;
+  display: flex;
+  cursor: pointer;
+  font-family: monospace;
+  padding: 1rem 2rem;
+  border-radius: 3%;
+  border: none;
+  color: #fff;
+}
+
+.game-screen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.game-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-game {
+  display: flex;
+  width: 90%;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.btn-nav {
+  user-select: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+#canvas {
+  border-radius: 2%;
+  height: 80vh;
+}
+
+.score {
+  font-size: 1.5rem;
+}
+
+.game-over-screen {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #11111188;
+}
+
+.game-over-continer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  background-color: #333;
+}
+
+.game-over-continer h2 {
+  font-size: 2rem;
+}
+#play-again {
+  outline: none;
+  background: linear-gradient(to left, #b422c588, #546aca88);
+  font-size: 1rem;
+  display: flex;
+  cursor: pointer;
+  font-family: monospace;
+  padding: 1rem 2rem;
+  border-radius: 3%;
+  border: none;
+  color: #fff;
+}
+
+@media (min-width: 500px) {
+  .score {
+    font-size: 2rem;
+  }
+  .nav-game {
+    display: none;
+    width: 90%;
+    list-style: none;
+  }
+
+  .game-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
